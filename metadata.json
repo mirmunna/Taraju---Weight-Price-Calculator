@@ -1,0 +1,6 @@
+{
+  "name": "Taraju - Weight & Price Calculator",
+  "description": "Fast, modern, mobile-first Taraju-style weight and price calculator for shopkeepers, grocery sellers, and market vendors.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

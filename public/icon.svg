@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#065f46"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background with rounded corners -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+
+  <!-- Subtle glow ring -->
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="none" stroke="#34d399" stroke-width="4" stroke-opacity="0.25"/>
+
+  <!-- Scale / Taraju Graphic -->
+  <g filter="url(#shadow)" transform="translate(0, 10)">
+    <!-- Central Pillar -->
+    <rect x="246" y="120" width="20" height="230" rx="10" fill="url(#metal)"/>
+    <ellipse cx="256" cy="120" rx="20" ry="14" fill="#fbbf24"/>
+    <circle cx="256" cy="120" r="8" fill="#d97706"/>
+
+    <!-- Base -->
+    <path d="M 180 370 C 180 350, 332 350, 332 370 L 350 395 C 352 400, 348 405, 340 405 L 172 405 C 164 405, 160 400, 162 395 Z" fill="url(#metal)"/>
+    
+    <!-- Balance Beam -->
+    <rect x="96" y="142" width="320" height="16" rx="8" fill="url(#metal)"/>
+
+    <!-- Left Strings and Pan -->
+    <path d="M 120 154 L 80 250 M 120 154 L 180 250" stroke="#f1f5f9" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 70 250 C 70 290, 190 290, 190 250 Z" fill="#fbbf24" stroke="#d97706" stroke-width="4"/>
+    <!-- Indian Rupee Symbol on Left Pan -->
+    <text x="130" y="274" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="28" fill="#78350f" text-anchor="middle">₹</text>
+
+    <!-- Right Strings and Pan -->
+    <path d="M 392 154 L 352 250 M 392 154 L 452 250" stroke="#f1f5f9" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 342 250 C 342 290, 462 290, 462 250 Z" fill="#38bdf8" stroke="#0284c7" stroke-width="4"/>
+    <!-- Weight 'kg' Symbol on Right Pan -->
+    <text x="402" y="274" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="26" fill="#0c4a6e" text-anchor="middle">kg</text>
+    
+    <!-- Center Pivot Indicator -->
+    <circle cx="256" cy="150" r="14" fill="#ef4444"/>
+    <circle cx="256" cy="150" r="6" fill="#ffffff"/>
+  </g>
+</svg>
